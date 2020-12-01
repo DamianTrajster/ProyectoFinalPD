@@ -1,0 +1,270 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.encabezado {
+    font-size: 2rem;
+    font-family: 'Lato',cursive;
+    line-height: 2.4rem;
+
+    
+
+}
+
+.encabezado span{
+    font-size: 3rem;
+    font-family: 'Italianno',cursive;
+    color:  #1385ce;
+
+}
+
+
+/** Sociales **/
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: #1385ce;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.sociales ul li a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: '\f16d';
+}
+.sociales ul li a[href*="pinterest.com"]::before{
+    content: '\f0d2';
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: '\f16a';
+}
+
+
+/*navegacion*/
+.navegacion {
+    background-color: #1385ce;
+
+}
+
+.navbar-light .navbar-toggler {
+    background-color: #fff;
+}
+
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover
+ {
+color: #fff;
+}
+
+
+.nav-link {
+    color: #fff;
+    font-size: 1.4rem;
+    transition: background-color .5s ease-in-out;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.nav-link:hover {
+   background-color:#bde8dd ;
+   color:#000;
+}
+
+
+/* CAROUSEL */
+
+.carousel-item{
+    width: 100%;
+    height: 500px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  @media (max-width: 600px) {
+    .carousel-item {
+      height: 280px;
+      width: 100% !important;
+    }
+  }
+  
+
+.carousel-caption h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+/* BIENVENIDA */
+.nuevo-sitio p {
+    font-family: 'Lato',sans-serif;
+    color: #979797;
+    font-size: 1.3rem;
+
+}
+
+/* CARDS */
+.imagen-servicio img {
+    border: 6px solid #fff;
+    -webkit-transition:transform .3s ease ;
+    -ms-transition: transform .3s ease;
+    transition: transform .3s ease;
+}
+
+.imagen-servicio img:hover{
+    -webkit-transform:scale(1.2) rotate(10deg);
+    -ms-transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
+
+}
+
+.servicio-info {
+    background-color: #fff;
+    margin-top: -5rem;
+}
+
+.servicio-info .btn-primary {
+    border-radius: 0;
+    background-color:#1385ce;
+    border:none;
+
+}
+
+/* PARALLAX */
+
+.Parallax{
+    background-image: url(../img/bg_parallax.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    
+}
+
+
+@media(min-width:992px) {
+    .Parallax{
+        background-size: cover;
+    }
+}
+
+
+.Parallax h3 {
+    font-size: 3.3rem;
+    font-family: 'Lato',sans-serif;
+}
+
+.Parallax p{
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+
+
+.btn-primary{
+    background-color:  #1385ce;
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 0;
+    font-family: 'Lato',sans-serif;
+    font-size: 1.2rem;
+
+}
+
+.btn-primary:hover{
+    background-color: #252850;
+}
+
+/* FOOTER */
+
+.copyright {
+    color: #979797;
+    font-size: .8rem;
+}
+
+/* HERO */
+
+.hero  {
+    position: relative;
+}
+
+.hero h2{
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    background-color: #1385ce;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+    color: #fff;
+    font-size: 2.8rem;
+
+}
+
+
+/* NOSOTROS*/
+.contenido-principal p {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-family: 'Lato',sans-serif;
+
+}
+
+/* SIDEBAR */
+
+aside {
+    background-color:  #1385ce;
+    color: #fff;
+
+}
+
+aside .btn-primary{
+    background-color:  #fff;
+    color: #000000;
+    border: 0;
+    padding: 1rem 5rem;
+    font-family: 'Lato',sans-serif;
+    font-size: 1.2rem;
+
+}
+
+/* GALERIA */
+
+.galeria .col-lg-4{
+    margin: 0 ;
+    padding: 25px;
+}
+.galeria img{
+    width: 100%;
+    height: 250px;
+}
+
+.galeria img:hover {
+    border: 5px solid #f7f7f7;
+}
+
+
+/* CONTACTO */
+.formulario-contacto {
+    border: 2px solid #9a9a9a;
+    background-color: #fff;
+}
+
+
